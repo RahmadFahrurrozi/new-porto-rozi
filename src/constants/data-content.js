@@ -9,32 +9,170 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 
 export const EXPERIENCES = [
   {
+    id: 1,
     year: "2023 - Present",
     role: "Senior Full Stack Developer",
     company: "Google Inc.",
     description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    technologies: [
+      {
+        id: 1,
+        nama: "React.js",
+        icon: "FaReact",
+      },
+      {
+        id: 2,
+        nama: "Node.js",
+        icon: "FaNodeJs",
+      },
+      {
+        id: 4,
+        nama: "Tailwind CSS",
+        icon: "RiTailwindCssFill",
+      },
+      {
+        id: 5,
+        nama: "HTML",
+        icon: "FaHtml5",
+      },
+      {
+        id: 6,
+        nama: "CSS",
+        icon: "FaCss3Alt",
+      },
+      {
+        id: 7,
+        nama: "Javascript",
+        icon: "IoLogoJavascript",
+      },
+    ],
   },
   {
+    id: 2,
     year: "2022 - 2023",
     role: "Frontend Developer",
     company: "Adobe",
     description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    technologies: [
+      {
+        id: 1,
+        nama: "Next.js",
+        icon: "SiNextdotjs",
+      },
+      {
+        id: 2,
+        nama: "React.js",
+        icon: "FaReact",
+      },
+      {
+        id: 3,
+        nama: "Tailwind CSS",
+        icon: "RiTailwindCssFill",
+      },
+      {
+        id: 4,
+        nama: "Node.js",
+        icon: "FaNodeJs",
+      },
+    ],
   },
   {
+    id: 3,
     year: "2021 - 2022",
     role: "Full Stack Developer",
     company: "Facebook",
     description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
+    technologies: [
+      {
+        id: 1,
+        nama: "Laravel",
+        icon: "FaLaravel",
+      },
+      {
+        id: 2,
+        nama: "Node.js",
+        icon: "FaNodeJs",
+      },
+      {
+        id: 3,
+        nama: "Tailwind CSS",
+        icon: "RiTailwindCssFill",
+      },
+      {
+        id: 4,
+        nama: "HTML",
+        icon: "FaHtml5",
+      },
+      {
+        id: 5,
+        nama: "CSS",
+        icon: "FaCss3Alt",
+      },
+      {
+        id: 6,
+        nama: "Javascript",
+        icon: "IoLogoJavascript",
+      },
+      {
+        id: 7,
+        nama: "MySQL",
+        icon: "SiMysql",
+      },
+      {
+        id: 8,
+        nama: "PHP",
+        icon: "FaPhp",
+      },
+    ],
   },
   {
+    id: 4,
     year: "2020 - 2021",
     role: "Software Engineer",
     company: "Paypal",
     description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    technologies: [
+      {
+        id: 1,
+        nama: "Laravel",
+        icon: "FaLaravel",
+      },
+      {
+        id: 2,
+        nama: "Node.js",
+        icon: "FaNodeJs",
+      },
+      {
+        id: 4,
+        nama: "HTML",
+        icon: "FaHtml5",
+      },
+      {
+        id: 5,
+        nama: "CSS",
+        icon: "FaCss3Alt",
+      },
+      {
+        id: 6,
+        nama: "Javascript",
+        icon: "IoLogoJavascript",
+      },
+      {
+        id: 7,
+        nama: "MySQL",
+        icon: "SiMysql",
+      },
+      {
+        id: 8,
+        nama: "PHP",
+        icon: "FaPhp",
+      },
+      {
+        id: 9,
+        nama: "Bootstrap",
+        icon: "FaBootstrap",
+      },
+    ],
   },
 ];
 
@@ -153,6 +291,6 @@ export const SOCIALMEDIA = [
 
 export const CONTACT = {
   address: "Banyuwangi, Jawa Timur, Indonesia",
-  phoneNo: "085746574319",
+  phone: "085746574319",
   email: "zfahrur150105@gmail.com",
 };

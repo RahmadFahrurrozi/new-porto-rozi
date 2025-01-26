@@ -2,8 +2,10 @@ import Navbar from "./components/navbar";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Experience from "./components/Experience";
+import Contact from "./components/Contact";
 
-const Test = () => {
+const App = () => {
   return (
     <div className="overflow-x-hidden text-stone-300 antialiased">
       <div className="fixed inset-0 -z-10">
@@ -18,9 +20,11 @@ const Test = () => {
         <Hero />
         <Skills />
         <Projects />
+        <Experience />
+        <Contact />
       </div>
     </div>
   );
 };
 
-export default Test;
+export default App;

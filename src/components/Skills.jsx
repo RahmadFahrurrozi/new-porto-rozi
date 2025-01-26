@@ -14,7 +14,9 @@ import { FaFigma } from "react-icons/fa";
 const Skills = () => {
   return (
     <div className="pb-24">
-      <h2 className="my-20 text-center text-4xl">Skills</h2>
+      <h2 className="my-20 text-center text-4xl bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text tracking-tight text-transparent">
+        Skills
+      </h2>
       <div className="flex flex-wrap items-center justify-center gap-4">
         <div>
           <FaHtml5 className="text-7xl text-orange-600" />
