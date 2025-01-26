@@ -1,6 +1,7 @@
 import Navbar from "./components/navbar";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 
 const Test = () => {
   return (
@@ -16,6 +17,7 @@ const Test = () => {
         <Navbar />
         <Hero />
         <Skills />
+        <Projects />
       </div>
     </div>
   );

@@ -9,12 +9,13 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { FaBootstrap } from "react-icons/fa";
 import { FaLaravel } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
+import { FaFigma } from "react-icons/fa";
 
 const Skills = () => {
   return (
     <div className="pb-24">
       <h2 className="my-20 text-center text-4xl">Skills</h2>
-      <div className="flex flex-wrap justify-center gap-4">
+      <div className="flex flex-wrap items-center justify-center gap-4">
         <div>
           <FaHtml5 className="text-7xl text-orange-600" />
         </div>
@@ -44,6 +45,9 @@ const Skills = () => {
         </div>
         <div>
           <SiMysql className="text-7xl text-stone-200" />
+        </div>
+        <div>
+          <FaFigma className="text-6xl text-violet-600" />
         </div>
       </div>
     </div>

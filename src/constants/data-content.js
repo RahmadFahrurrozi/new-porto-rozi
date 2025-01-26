@@ -40,40 +40,99 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Website Profile Bisnis Digital",
+    id: 1,
+    title: "Website Bisnis Digital",
+    link: "https://bisnisdigital.poliwangi.ac.id/",
     image: bsdwebsite,
+
     description:
       "Website profil Program Studi Bisnis Digital dirancang modern dan responsif menggunakan AngularJS dan Bootstrap, menampilkan informasi prodi secara informatif untuk kebutuhan calon mahasiswa baru.",
-    technologies: ["HTML", "CSS", "JavaScript", "Angular", "Bootstrap"],
+    technologies: [
+      { id: 1, nama: "AngularJS", icon: "FaAngular" },
+      { id: 2, nama: "Bootstrap", icon: "FaBootstrap" },
+      { id: 3, nama: "HTML", icon: "FaHtml5" },
+      { id: 4, nama: "CSS", icon: "FaCss3Alt" },
+      { id: 5, nama: "Javascript", icon: "IoLogoJavascript" },
+      { id: 6, nama: "Node Js", icon: "FaNodeJs" },
+    ],
   },
   {
+    id: 2,
     title: "Website UMKM Desa Karangbendo",
+    link: "https://umkmdesakarangbendo.com/",
     image: umkmKarangbendo,
     description:
-      "Website UMKM Desa Karangbendo dibuat menggunakan Laravel dan Tailwind CSS, dirancang modern untuk mempromosikan UMKM dan menyediakan platform penjualan.",
-    technologies: ["Laravel", "Tailwind CSS", "PHP", "MySQL"],
+      "Website UMKM Desa Karangbendo dibuat dan dirancang modern untuk mempromosikan UMKM yang ada pada desa karangbendo dan menyediakan platform untuk mempromosikan produk-produknya.",
+    technologies: [
+      {
+        id: 1,
+        nama: "Laravel",
+        icon: "FaLaravel",
+      },
+      {
+        id: 2,
+        nama: "Tailwind CSS",
+        icon: "RiTailwindCssFill",
+      },
+      {
+        id: 3,
+        nama: "HTML",
+        icon: "FaHtml5",
+      },
+      {
+        id: 4,
+        nama: "CSS",
+        icon: "FaCss3Alt",
+      },
+      {
+        id: 5,
+        nama: "Javascript",
+        icon: "IoLogoJavascript",
+      },
+      {
+        id: 6,
+        nama: "Node Js",
+        icon: "FaNodeJs",
+      },
+      {
+        id: 7,
+        nama: "MySQL",
+        icon: "SiMysql",
+      },
+    ],
   },
   {
+    id: 3,
     title: "Akrab E-commerce",
+    link: "/",
     image: akrab,
     description:
       "Website Akrab  E-commerce dibuat untuk menunjang proses bisnis dan memudahkan para anggota umkm untuk berjualan dan mempromosikannya secara mudah.",
     technologies: [
-      "Wordpress",
-      "Elementor",
-      "WooCommerce",
-      "PHP",
-      "MySQL",
-      "Midtrans",
-      "Wongkir",
+      {
+        id: 1,
+        nama: "Wordpress",
+        icon: "FaWordpress",
+      },
+      { id: 2, nama: "Elementor", icon: "FaElementor" },
+      { id: 3, nama: "Woocommerce", icon: "SiWoocommerce" },
+      { id: 4, nama: "PHP", icon: "FaPhp" },
+      { id: 5, nama: "MySQL", icon: "SiMysql" },
     ],
   },
   {
+    id: 4,
     title: "Website Restaurant",
+    link: "https://restaurant-app-rahmadfahrurrozi.vercel.app/",
     image: restaurant,
     description:
       "Tugas Submission: Restaurant App yang digunakan untuk kelulusan dikelas Frontend Web developer Expert dari Dicoding.",
-    technologies: ["HTML", "CSS", "JavaScript"],
+    technologies: [
+      { id: 1, nama: "HTML", icon: "FaHtml5" },
+      { id: 2, nama: "CSS", icon: "FaCss3Alt" },
+      { id: 3, nama: "Javascript", icon: "IoLogoJavascript" },
+      { id: 5, nama: "Node Js", icon: "FaNodeJs" },
+    ],
   },
 ];
 
