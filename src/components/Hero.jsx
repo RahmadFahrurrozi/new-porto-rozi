@@ -1,14 +1,15 @@
-import profilepic from "../assets/photo/panda.jpeg";
 import { HERO_CONTENT } from "../constants/data-content";
+import { PROFILEPICT } from "../constants/data-content";
 const Hero = () => {
   return (
-    <div className="pb-4 lg:mb-36">
+    <div id="home" className="pb-4 lg:mb-36">
       <div className="flex flex-wrap lg:flex-row-reverse">
         <div className="w-full lg:w-1/2">
           <img
-            src={profilepic}
+            src={PROFILEPICT.image}
             alt="Rahmad Fahrurrozi"
             className="border border-stone-900 rounded-3xl w-full lg:w-3/4 transition duration-300 ease-in-out hover:filter-none filter grayscale"
+            onContextMenu={(e) => e.preventDefault()}
           />
           {/* <div className="absolute bottom-0 left-70 right-10 -z-10 top-50 w-[400px] h-[400px] rounded-full bg-[radial-gradient(circle_400px_at_50%_300px,#fbfbfb36,#000)] blur-md"></div> */}
         </div>

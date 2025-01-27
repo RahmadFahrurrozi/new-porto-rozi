@@ -8,11 +8,13 @@ import {
   FaCss3Alt,
   FaPhp,
   FaBootstrap,
+  FaAngular,
+  FaWordpress,
+  FaElementor,
 } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiMysql } from "react-icons/si";
-import { SiNextdotjs } from "react-icons/si";
+import { SiJest, SiMysql, SiGooglecloud, SiWoocommerce } from "react-icons/si";
 
 const iconMap = {
   FaReact: <FaReact className="text-cyan-400" />,
@@ -25,12 +27,17 @@ const iconMap = {
   RiTailwindCssFill: <RiTailwindCssFill className="text-sky-500" />,
   IoLogoJavascript: <IoLogoJavascript className="text-yellow-400" />,
   SiMysql: <SiMysql className="text-blue-600" />,
-  SiNextdotjs: <SiNextdotjs className="text-black" />,
+  FaAngular: <FaAngular className="text-red-600" />,
+  FaWordpress: <FaWordpress className="text-blue-400" />,
+  FaElementor: <FaElementor className="text-pink-500" />,
+  SiJest: <SiJest className="text-red-600" />,
+  SiGooglecloud: <SiGooglecloud className="text-blue-600" />,
+  SiWoocommerce: <SiWoocommerce className="text-indigo-400" />,
 };
 
 const Experience = () => {
   return (
-    <div className="pb-4">
+    <div id="experience" className="pb-4">
       <h2 className="my-20 text-center text-4xl bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text tracking-tight text-transparent">
         Experience
       </h2>

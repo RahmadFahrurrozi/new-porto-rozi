@@ -4,6 +4,8 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
+import Sidebar from "./components/sidebar";
+// import TimelineScrollable from "./components/TimelineData";
 
 const App = () => {
   return (
@@ -15,14 +17,16 @@ const App = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-8">
+      <main className="container mx-auto px-8">
         <Navbar />
         <Hero />
         <Skills />
         <Projects />
         <Experience />
         <Contact />
-      </div>
+      </main>
+      {/* <TimelineScrollable /> */}
+      <Sidebar />
     </div>
   );
 };
