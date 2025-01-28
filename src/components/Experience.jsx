@@ -15,6 +15,7 @@ import {
 import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiJest, SiMysql, SiGooglecloud, SiWoocommerce } from "react-icons/si";
+import { motion } from "framer-motion";
 
 const iconMap = {
   FaReact: <FaReact className="text-cyan-400" />,
@@ -38,9 +39,14 @@ const iconMap = {
 const Experience = () => {
   return (
     <div id="experience" className="py-10 px-4 sm:px-8 md:px-16 lg:px-32">
-      <h2 className="my-16 text-center text-3xl lg:text-4xl font-bold bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text tracking-tight text-transparent">
+      <motion.h2
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 1 }}
+        className="my-16 text-center text-3xl lg:text-4xl font-bold bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text tracking-tight text-transparent"
+      >
         Experience
-      </h2>
+      </motion.h2>
       <div className="relative">
         {/* Timeline line */}
         <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-stone-700" />
@@ -51,33 +57,53 @@ const Experience = () => {
             className="mb-12 flex flex-wrap lg:flex-nowrap relative items-start"
           >
             {/* Timeline dot */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 top-[24px] lg:top-0  w-4 h-4 bg-stone-600 rounded-full border-4 border-stone-800" />
+            <motion.div className="absolute left-1/2 transform -translate-x-1/2 top-[24px] lg:top-0  w-4 h-4 bg-stone-600 rounded-full border-4 border-stone-800" />
 
             {/* Year section */}
-            <div className="w-full lg:w-1/2 lg:pr-16 text-center lg:text-right">
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: 100 }}
+              transition={{ duration: 1 }}
+              className="w-full lg:w-1/2 lg:pr-16 text-center lg:text-right"
+            >
               <p className="text-sm text-stone-400 font-medium">
                 {experience.year}
               </p>
-            </div>
+            </motion.div>
 
             {/* Content section */}
             <div className="w-full lg:w-1/2 lg:pl-16 mt-6 lg:mt-0">
               <div className="mb-4">
-                <h3 className="mb-2 font-semibold text-white">
+                <motion.div
+                  whileInView={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, x: -100 }}
+                  transition={{ duration: 1 }}
+                  className="mb-2 font-semibold text-white"
+                >
                   {experience.role} -{" "}
                   <span className="text-sm text-stone-400">
                     {experience.company}
                   </span>
-                </h3>
-                <p className="mb-4 text-stone-400">{experience.description}</p>
+                </motion.div>
+                <motion.p
+                  whileInView={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, x: -100 }}
+                  transition={{ duration: 1 }}
+                  className="mb-4 text-stone-400"
+                >
+                  {experience.description}
+                </motion.p>
                 <div className="flex flex-wrap gap-2">
                   {experience.technologies.map((tech) => (
-                    <span
+                    <motion.span
+                      whileInView={{ opacity: 1, y: 0 }}
+                      initial={{ opacity: 0, y: 100 }}
+                      transition={{ duration: 1 }}
                       key={tech.id}
                       className="flex flex-row items-center gap-2 rounded-full bg-stone-700 px-3 py-1 text-sm font-semibold text-white"
                     >
                       {iconMap[tech.icon]} {tech.nama}
-                    </span>
+                    </motion.span>
                   ))}
                 </div>
               </div>

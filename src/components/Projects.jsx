@@ -16,6 +16,7 @@ import {
 import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiMysql, SiJest, SiWoocommerce } from "react-icons/si";
+import { motion } from "framer-motion";
 
 const iconMap = {
   FaAngular: <FaAngular className="text-red-600" />,
@@ -50,16 +51,26 @@ const Projects = () => {
 
   return (
     <div id="projects" className="py-5">
-      <h2 className="my-20 text-center text-4xl bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text tracking-tight text-transparent">
+      <motion.h2
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 1 }}
+        className="my-20 text-center text-4xl bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text tracking-tight text-transparent"
+      >
         Projects
-      </h2>
+      </motion.h2>
       <div>
         {PROJECTS.map((Project) => (
           <div
             key={Project.id}
             className="mb-8 flex flex-wrap gap-8 lg:justify-center"
           >
-            <div className="w-full lg:w-1/4 relative group">
+            <motion.div
+              className="w-full lg:w-1/4 relative group"
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -100 }}
+              transition={{ duration: 1 }}
+            >
               <div className="relative group">
                 <img
                   src={Project.image}
@@ -88,21 +99,29 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="w-full max-w-xl lg:w-3/4">
+            </motion.div>
+            <motion.div
+              className="w-full max-w-xl lg:w-3/4"
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: 100 }}
+              transition={{ duration: 1 }}
+            >
               <h3 className="mb-2 font-semibold text-2xl">{Project.title}</h3>
               <p className="mb-4 text-stone-400">{Project.description}</p>
               <div className="mb-2 flex flex-row flex-wrap items-center gap-2">
                 {Project.technologies.map((tech) => (
-                  <span
+                  <motion.div
                     className="flex flex-row mr-2 items-center gap-2 rounded-full bg-stone-800 px-3 py-1 text-sm font-semibold text-white"
+                    whileInView={{ opacity: 1, y: 0 }}
+                    initial={{ opacity: 0, y: 100 }}
+                    transition={{ duration: 1 }}
                     key={tech.id}
                   >
                     {iconMap[tech.icon]} {tech.nama}
-                  </span>
+                  </motion.div>
                 ))}
               </div>
-            </div>
+            </motion.div>
           </div>
         ))}
       </div>

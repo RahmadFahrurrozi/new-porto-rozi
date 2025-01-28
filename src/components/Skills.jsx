@@ -113,9 +113,14 @@ const Skills = () => {
 
   return (
     <div id="skills" className="pb-24 pt-5 min-h-[60vh]">
-      <h2 className="my-20 text-center text-4xl bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text tracking-tight text-transparent">
+      <motion.h2
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 1 }}
+        className="my-20 text-center text-4xl bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text tracking-tight text-transparent"
+      >
         Skills
-      </h2>
+      </motion.h2>
       <motion.div
         className="flex flex-wrap items-center justify-center gap-4"
         variants={containerVariants}
@@ -128,6 +133,9 @@ const Skills = () => {
             key={skill.key}
             variants={itemVariants}
             whileHover="hover"
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: 100 }}
+            transition={{ duration: 1 }}
             animate={getFloatingAnimation()}
             className="cursor-pointer"
           >
