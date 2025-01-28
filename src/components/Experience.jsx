@@ -51,7 +51,7 @@ const Experience = () => {
             className="mb-12 flex flex-wrap lg:flex-nowrap relative items-start"
           >
             {/* Timeline dot */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 top-[24px] lg:top-0 w-4 h-4 bg-stone-600 rounded-full border-4 border-stone-800" />
+            <div className="absolute left-1/2 transform -translate-x-1/2 top-[24px] lg:top-0  w-4 h-4 bg-stone-600 rounded-full border-4 border-stone-800" />
 
             {/* Year section */}
             <div className="w-full lg:w-1/2 lg:pr-16 text-center lg:text-right">

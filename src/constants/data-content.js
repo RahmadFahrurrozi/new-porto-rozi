@@ -16,7 +16,7 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 export const EXPERIENCES = [
   {
     id: 1,
-    year: "Jnuary (2025)",
+    year: "January (2025)",
     role: "Frontend Developer",
     company: "Politeknik Negeri Banyuwangi",
     description: `Developed and maintained the official website of the Digital Business program, focusing on modern and responsive designs. The website was built using AngularJS and Bootstrap, providing detailed program information for prospective students.`,
@@ -199,7 +199,7 @@ export const SOCIALMEDIA = [
 ];
 
 export const CONTACT = {
-  address: "Banyuwangi, Jawa Timur, Indonesia",
+  address: "Banyuwangi, jawa timur, Indonesia",
   phone: "085746574319",
   email: "zfahrur150105@gmail.com",
 };
