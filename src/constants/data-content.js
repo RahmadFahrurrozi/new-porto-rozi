@@ -16,7 +16,7 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 export const EXPERIENCES = [
   {
     id: 1,
-    year: "Jnuary (2024)",
+    year: "Jnuary (2025)",
     role: "Frontend Developer",
     company: "Politeknik Negeri Banyuwangi",
     description: `Developed and maintained the official website of the Digital Business program, focusing on modern and responsive designs. The website was built using AngularJS and Bootstrap, providing detailed program information for prospective students.`,
@@ -31,7 +31,7 @@ export const EXPERIENCES = [
   },
   {
     id: 2,
-    year: "february - Desember (2024)",
+    year: "february - December (2024)",
     role: "Frontend Developer",
     company: "Dicoding Academy",
     description: `Built a Restaurant App as part of the Frontend Web Developer Expert course. The app was designed with progressive web app (PWA) features and utilized advanced technologies to enhance performance and user experience.`,

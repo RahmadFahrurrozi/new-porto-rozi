@@ -9,7 +9,10 @@ const iconMap = {
 };
 const Contact = () => {
   return (
-    <footer id="contact" className="relative border-t border-stone-800 pb-20">
+    <footer
+      id="contact"
+      className="relative border-t border-stone-800 pb-20 h-[50vh] overflow-hidden pt-5"
+    >
       <h2 className="my-10 text-center text-4xl bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text tracking-tight text-transparent">
         Contact Me
       </h2>

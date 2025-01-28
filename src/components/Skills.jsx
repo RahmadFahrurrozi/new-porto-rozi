@@ -13,7 +13,7 @@ import { FaFigma } from "react-icons/fa";
 
 const Skills = () => {
   return (
-    <div id="skills" className="pb-24">
+    <div id="skills" className="pb-24 pt-5 min-h-[60vh]">
       <h2 className="my-20 text-center text-4xl bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text tracking-tight text-transparent">
         Skills
       </h2>

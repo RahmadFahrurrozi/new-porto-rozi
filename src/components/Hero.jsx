@@ -2,7 +2,7 @@ import { HERO_CONTENT } from "../constants/data-content";
 import { PROFILEPICT } from "../constants/data-content";
 const Hero = () => {
   return (
-    <div id="home" className="pb-4 lg:mb-36">
+    <div id="home" className="py-5 lg:mb-36">
       <div className="flex flex-wrap lg:flex-row-reverse">
         <div className="w-full lg:w-1/2">
           <img
