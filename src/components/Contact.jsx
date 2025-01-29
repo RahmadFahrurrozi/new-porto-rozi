@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const iconMap = {
-  FaGithub: <FaGithub className="text-2xl text-white" />,
+  FaGithub: <FaGithub className="text-2xl text-gray-800 dark:text-white" />,
   FaLinkedin: <FaLinkedin className="text-2xl text-blue-600" />,
   FaInstagram: <FaInstagram className="text-2xl text-pink-500" />,
 };
@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <footer
       id="contact"
-      className="relative border-t border-stone-800 pb-20 h-[50vh] overflow-hidden pt-5"
+      className="relative border-t border-stone-800 pb-20 h-[60vh] overflow-hidden pt-5"
     >
       <motion.h2
         className="my-10 text-center text-4xl bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text tracking-tight text-transparent"

@@ -102,7 +102,7 @@ const Skills = () => {
       key: "bootstrap",
     },
     {
-      icon: <SiMysql className="text-7xl text-stone-200" />,
+      icon: <SiMysql className="text-7xl text-stone-600 dark:text-stone-100" />,
       key: "mysql",
     },
     {

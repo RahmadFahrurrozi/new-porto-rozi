@@ -78,7 +78,7 @@ const Experience = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   initial={{ opacity: 0, x: -100 }}
                   transition={{ duration: 1 }}
-                  className="mb-2 font-semibold text-white"
+                  className="mb-2 font-semibold text-stone-800 dark:text-white"
                 >
                   {experience.role} -{" "}
                   <span className="text-sm text-stone-400">
@@ -96,8 +96,8 @@ const Experience = () => {
                 <div className="flex flex-wrap gap-2">
                   {experience.technologies.map((tech) => (
                     <motion.span
-                      whileInView={{ opacity: 1, y: 0 }}
-                      initial={{ opacity: 0, y: 100 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      initial={{ opacity: 0, x: -100 }}
                       transition={{ duration: 1 }}
                       key={tech.id}
                       className="flex flex-row items-center gap-2 rounded-full bg-stone-700 px-3 py-1 text-sm font-semibold text-white"

@@ -17,6 +17,9 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiMysql, SiJest, SiWoocommerce } from "react-icons/si";
 import { motion } from "framer-motion";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const iconMap = {
   FaAngular: <FaAngular className="text-red-600" />,
@@ -38,6 +41,7 @@ const iconMap = {
 const Projects = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [imagesLoaded, setImagesLoaded] = useState({});
 
   const openModal = (image) => {
     setSelectedImage(image);
@@ -46,7 +50,14 @@ const Projects = () => {
 
   const closeModal = () => {
     setIsModalOpen(false);
-    setTimeout(() => setSelectedImage(null), 300); // Delay to match transition
+    setTimeout(() => setSelectedImage(null), 300);
+  };
+
+  const handleImageLoad = (imageId) => {
+    setImagesLoaded(prev => ({
+      ...prev,
+      [imageId]: true
+    }));
   };
 
   return (
@@ -72,32 +83,39 @@ const Projects = () => {
               transition={{ duration: 1 }}
             >
               <div className="relative group">
-                <img
+                <LazyLoadImage
                   src={Project.image}
                   alt={Project.title}
                   className="w-full mb-6 rounded"
+                  effect="blur"
+                  afterLoad={() => handleImageLoad(Project.id)}
                   onContextMenu={(e) => e.preventDefault()}
+                  placeholder={
+                    <div className="animate-pulse bg-gray-200 w-full h-48 rounded"></div>
+                  }
                 />
-                <div className="absolute inset-0 opacity-0 transition duration-300 ease-in-out group-hover:opacity-100">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black opacity-90"></div>
-                  <div className="absolute inset-0 flex items-center gap-2 justify-center">
-                    <a
-                      href={Project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <div className="bg-stone-700 p-4 rounded-full">
-                        <FaExternalLinkAlt />
-                      </div>
-                    </a>
-                    <button
-                      onClick={() => openModal(Project.image)}
-                      className="bg-stone-700 p-4 rounded-full"
-                    >
-                      <FaEye />
-                    </button>
+                {imagesLoaded[Project.id] && (
+                  <div className="absolute inset-0 opacity-0 transition duration-300 ease-in-out group-hover:opacity-100">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black opacity-90"></div>
+                    <div className="absolute inset-0 flex items-center gap-2 justify-center">
+                      <a
+                        href={Project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <div className="bg-stone-700 text-white dark:bg-white dark:text-stone-700 p-4 rounded-full">
+                          <FaExternalLinkAlt />
+                        </div>
+                      </a>
+                      <button
+                        onClick={() => openModal(Project.image)}
+                        className="bg-stone-700 text-white dark:bg-white dark:text-stone-700 p-4 rounded-full"
+                      >
+                        <FaEye />
+                      </button>
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
             </motion.div>
             <motion.div
@@ -134,11 +152,15 @@ const Projects = () => {
           }`}
         >
           <div className="relative">
-            <img
+            <LazyLoadImage
               src={selectedImage}
               alt="Modal Preview"
               className="max-w-full max-h-screen rounded shadow-lg"
+              effect="blur"
               onContextMenu={(e) => e.preventDefault()}
+              placeholder={
+                <div className="animate-pulse bg-gray-200 w-full h-48 rounded"></div>
+              }
             />
             <button
               onClick={closeModal}
