@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
+import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Sidebar from "./components/sidebar";
-import NavigationBar from "./components/navbar";
+
 
 
 const App = () => {
@@ -48,8 +49,7 @@ const App = () => {
       </div>
 
       <main className="container relative mx-auto px-8">
-        <NavigationBar isDarkMode={isDarkMode} />
-
+        <Header />
         {/* Control Buttons Group */}
         <div className="fixed z-20 top-4 right-4 ">
           {/* Dark Mode Toggle Button */}

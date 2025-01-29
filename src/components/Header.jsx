@@ -1,7 +1,4 @@
-import React from "react";
-import { GiPanda } from "react-icons/gi";
-
-const NavigationBar = () => {
+const Header = () => {
   return (
     <nav className="flex items-center justify-between py-6">
       <div className="flex flex-shrink-0 items-center">
@@ -10,10 +7,6 @@ const NavigationBar = () => {
             <p className="text-gray-900 dark:text-white transition-transform duration-300 hover:scale-105">
               Panda!
             </p>
-            <GiPanda
-              className="text-xl text-indigo-600 dark:text-yellow-400
-            "
-            />
           </div>
         </a>
       </div>
@@ -21,4 +14,4 @@ const NavigationBar = () => {
   );
 };
 
-export default NavigationBar;
+export default Header;
