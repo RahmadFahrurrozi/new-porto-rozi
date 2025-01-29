@@ -8,8 +8,10 @@ import {
 } from "react-icons/fa";
 
 const Sidebar = ({ isDarkMode }) => {
+  // State untuk menyimpan bagian (section) yang sedang aktif berdasarkan scroll
   const [activeSection, setActiveSection] = useState("");
 
+  // Daftar item menu untuk sidebar dengan ikon dan tautan ke section
   const menuItems = [
     { icon: <FaHome />, label: "Home", link: "#home" },
     { icon: <FaTools />, label: "Skills", link: "#skills" },
@@ -18,37 +20,40 @@ const Sidebar = ({ isDarkMode }) => {
     { icon: <FaEnvelope />, label: "Contact", link: "#contact" },
   ];
 
+  // useEffect untuk mendeteksi scroll dan mengupdate section yang sedang aktif
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + window.innerHeight / 2;
-
+      const scrollPosition = window.scrollY + window.innerHeight / 2; // Ambil posisi scroll tengah layar
       let currentSection = "";
 
+      // Loop melalui setiap item menu untuk mengecek apakah posisi scroll berada dalam section tersebut
       menuItems.forEach((item) => {
         const section = document.querySelector(item.link);
         if (section) {
           const { offsetTop, offsetHeight } = section;
-          if (
-            scrollPosition >= offsetTop &&
-            scrollPosition < offsetTop + offsetHeight
-          ) {
-            currentSection = item.link;
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            currentSection = item.link; // Jika dalam jangkauan, tandai sebagai aktif
           }
         }
       });
 
-      setActiveSection(currentSection);
+      setActiveSection(currentSection); // Update state activeSection
     };
 
+    // Tambahkan event listener untuk mendeteksi scroll
     window.addEventListener("scroll", handleScroll);
+
+    // Cleanup function untuk menghapus event listener saat komponen di-unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [menuItems]);
 
+  // Fungsi untuk menangani klik menu sidebar
   const handleClick = (link) => {
-    setActiveSection(link);
+    setActiveSection(link); // Set section yang aktif saat diklik
   };
+
 
   return (
     <div>

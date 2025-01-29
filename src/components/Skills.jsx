@@ -11,6 +11,7 @@ import { FaBootstrap } from "react-icons/fa";
 import { FaLaravel } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 import { FaFigma } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa";
 
 const Skills = () => {
   const containerVariants = {
@@ -104,6 +105,10 @@ const Skills = () => {
     {
       icon: <SiMysql className="text-7xl text-stone-600 dark:text-stone-100" />,
       key: "mysql",
+    },
+    {
+      icon: <FaGitAlt className="text-6xl text-orange-600" />,
+      key: "git",
     },
     {
       icon: <FaFigma className="text-6xl text-violet-600" />,
