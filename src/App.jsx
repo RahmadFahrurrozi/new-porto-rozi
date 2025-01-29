@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Experience from "./components/Experience";
-import Contact from "./components/Contact";
-import Sidebar from "./components/sidebar";
+import Header from "./components/Header.jsx";
+import Hero from "./components/Hero.jsx";
+import Skills from "./components/Skills.jsx";
+import Projects from "./components/Projects.jsx";
+import Experience from "./components/Experience.jsx";
+import Contact from "./components/Contact.jsx";
+import Sidebar from "./components/sidebar.jsx";
 
 
 
