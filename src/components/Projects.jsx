@@ -79,7 +79,7 @@ const Projects = () => {
             <motion.div
               className="w-full lg:w-1/4 relative group"
               whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: -100 }}
+              initial={{ opacity: 0, x: 0}}
               transition={{ duration: 1 }}
             >
               <div className="relative group">
