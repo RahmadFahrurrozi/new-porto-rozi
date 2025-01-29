@@ -1,6 +1,7 @@
+import React from "react";
 import { GiPanda } from "react-icons/gi";
 
-const Navbar = () => {
+const NavigationBar = () => {
   return (
     <nav className="flex items-center justify-between py-6">
       <div className="flex flex-shrink-0 items-center">
@@ -20,4 +21,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavigationBar;

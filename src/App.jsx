@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "./components/navbar";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Sidebar from "./components/sidebar";
+import NavigationBar from "./components/navbar";
+
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -47,7 +48,7 @@ const App = () => {
       </div>
 
       <main className="container relative mx-auto px-8">
-        <Navbar isDarkMode={isDarkMode} />
+        <NavigationBar isDarkMode={isDarkMode} />
 
         {/* Control Buttons Group */}
         <div className="fixed z-20 top-4 right-4 ">
