@@ -1,8 +1,8 @@
-import bsdwebsite from "../assets/projects/BSD.png";
-import umkmKarangbendo from "../assets/projects/umkm-desa-karangbendo.png";
-import akrab from "../assets/projects/akrab.png";
-import panda from "../assets/photo/panda.jpeg";
-import restaurant from "../assets/projects/restaurant-app.png";
+import bsdwebsite from "../assets/projects/BSD.webp";
+import umkmKarangbendo from "../assets/projects/umkm-desa-karangbendo.webp";
+import akrab from "../assets/projects/akrab.webp";
+import panda from "../assets/photo/panda.webp";
+import restaurant from "../assets/projects/restaurant-app.webp";
 
 export const PROFILEPICT = {
   name: "Rahmad Fahrurrozi",
