@@ -9,7 +9,7 @@ export const PROFILEPICT = {
   image: panda,
 };
 
-export const HERO_CONTENT = `Hi, I'm Rahmad Fahrurrozi, a third-semester student in Business and Informatics at Politeknik Negeri Banyuwangi. I'm a graduate of the 2024 DBS Foundation Scholarship Program by Dicoding and DBS, specializing in Frontend Development.`;
+export const HERO_CONTENT = `Hi, I'm Rahmad Fahrurrozi, a fourth-semester student in Business and Informatics at Politeknik Negeri Banyuwangi. I'm a graduate of the 2024 DBS Foundation Scholarship Program by Dicoding and DBS, specializing in Frontend Development.`;
 
 export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
 
