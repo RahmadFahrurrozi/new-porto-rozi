@@ -20,7 +20,7 @@ const Contact = () => {
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1 }}
       >
-        Let's Work Together
+        Get in Touch
       </motion.h2>
       <motion.div
         whileInView={{ opacity: 1, y: 0 }}
