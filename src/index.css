@@ -6,8 +6,42 @@
 
 :root {
   font-family: "Nunito Sans", sans-serif;
-  background: #000;
+  /* background: #000; */
 }
 html {
   scroll-behavior: smooth;
+}
+/* Scrollbar Track (latar belakang scrollbar) */
+::-webkit-scrollbar {
+  width: 12px; /* Lebar scrollbar */
+  height: 12px; /* Tinggi scrollbar (untuk scrollbar horizontal) */
+}
+
+/* Scrollbar Thumb (bagian yang bisa digeser) */
+::-webkit-scrollbar-thumb {
+  background-color: #4f46e5; /* Warna thumb (biru modern) */
+  border-radius: 10px; /* Membuat ujung thumb rounded */
+  border: 3px solid transparent; /* Border transparan untuk efek padding */
+  background-clip: content-box; /* Memastikan warna hanya di area content */
+}
+
+/* Scrollbar Thumb saat dihover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #6366f1; /* Warna thumb saat dihover */
+}
+
+/* Scrollbar Track (latar belakang scrollbar) */
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Warna track (abu-abu muda) */
+  border-radius: 10px; /* Membuat ujung track rounded */
+}
+
+/* Scrollbar Track saat dihover */
+::-webkit-scrollbar-track:hover {
+  background-color: transparent; /* Warna track saat dihover */
+}
+
+/* Scrollbar Corner (sudut antara scrollbar vertikal dan horizontal) */
+::-webkit-scrollbar-corner {
+  background-color: transparent; /* Warna corner */
 }
