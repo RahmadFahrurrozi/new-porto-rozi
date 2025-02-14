@@ -115,7 +115,7 @@ const Experience = () => {
         </div>
       </div>
 
-      <div className="py-10 flex flex-col items-center px-4 sm:px-8 md:px-16 lg:px-32">
+      <div className="pb-28 flex flex-col items-center px-4 sm:px-8 md:px-16 lg:px-32">
         <motion.h2
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -100 }}
