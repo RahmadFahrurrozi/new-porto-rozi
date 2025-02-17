@@ -10,6 +10,7 @@ const iconMap = {
 };
 const Contact = () => {
   return (
+    // footer
     <footer
       id="contact"
       className="relative border-t border-stone-800 pb-20 h-[60vh] overflow-hidden pt-5"
@@ -22,6 +23,7 @@ const Contact = () => {
       >
         Get in Touch
       </motion.h2>
+      {/* Contact Info */}
       <motion.div
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 100 }}
@@ -45,6 +47,7 @@ const Contact = () => {
         >
           {CONTACT.email}
         </a>
+        {/* Social Media */}
         <div className="flex gap-4 items-center">
           {SOCIALMEDIA.map((social) => (
             <motion.a

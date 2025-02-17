@@ -8,10 +8,10 @@ import {
 } from "react-icons/fa";
 
 const Sidebar = ({ isDarkMode }) => {
-  // State untuk menyimpan bagian (section) yang sedang aktif berdasarkan scroll
+  // Sstate for active section
   const [activeSection, setActiveSection] = useState("");
 
-  // Daftar item menu untuk sidebar dengan ikon dan tautan ke section
+  // list menu items
   const menuItems = [
     { icon: <FaHome />, label: "Home", link: "#home" },
     { icon: <FaTools />, label: "Skills", link: "#skills" },
@@ -20,44 +20,46 @@ const Sidebar = ({ isDarkMode }) => {
     { icon: <FaEnvelope />, label: "Contact", link: "#contact" },
   ];
 
-  // useEffect untuk mendeteksi scroll dan mengupdate section yang sedang aktif
+  // useEffect for scroll event listener
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + window.innerHeight / 2; // Ambil posisi scroll tengah layar
+      const scrollPosition = window.scrollY + window.innerHeight / 2; // get scroll position in the middle of the window
       let currentSection = "";
 
-      // Loop melalui setiap item menu untuk mengecek apakah posisi scroll berada dalam section tersebut
+      // Loop through menu items to check which section is active
       menuItems.forEach((item) => {
         const section = document.querySelector(item.link);
         if (section) {
           const { offsetTop, offsetHeight } = section;
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-            currentSection = item.link; // Jika dalam jangkauan, tandai sebagai aktif
+          if (
+            scrollPosition >= offsetTop &&
+            scrollPosition < offsetTop + offsetHeight
+          ) {
+            currentSection = item.link; // if the section is active, set the current section
           }
         }
       });
 
-      setActiveSection(currentSection); // Update state activeSection
+      setActiveSection(currentSection); // set the active section
     };
 
-    // Tambahkan event listener untuk mendeteksi scroll
+    // Add event listener for scroll
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup function untuk menghapus event listener saat komponen di-unmount
+    // Cleanup function for removing event listener
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [menuItems]);
 
-  // Fungsi untuk menangani klik menu sidebar
+  // Function to handle click event
   const handleClick = (link) => {
-    setActiveSection(link); // Set section yang aktif saat diklik
+    setActiveSection(link); // set the active section
   };
-
 
   return (
     <div>
-      {/* Sidebar untuk layar besar */}
+      {/* Sidebar for large screens */}
       <div
         className={`hidden lg:fixed lg:rounded-full lg:border ${
           isDarkMode
@@ -86,7 +88,7 @@ const Sidebar = ({ isDarkMode }) => {
         ))}
       </div>
 
-      {/* Navbar untuk layar kecil */}
+      {/* Sidebar for small screens */}
       <div
         className={`lg:hidden py-1 rounded-full border backdrop-blur-md fixed bottom-4 left-4 right-4 flex justify-center items-center shadow-lg transition-colors duration-300  ${
           isDarkMode

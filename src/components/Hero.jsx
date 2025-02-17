@@ -2,8 +2,8 @@ import { HERO_CONTENT } from "../constants/data-content";
 import { PROFILEPICT } from "../constants/data-content";
 import { motion } from "framer-motion";
 import { CONTACT } from "../constants/data-content";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Hero = () => {
   return (
@@ -51,6 +51,7 @@ const Hero = () => {
             >
               {HERO_CONTENT}
             </motion.p>
+            {/* button hire me */}
             <motion.a
               href="/resume.pdf"
               target="_blank"
