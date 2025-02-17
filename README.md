@@ -24,9 +24,9 @@ This is my personal web portfolio designed to showcase my projects and experienc
  ├── 📂 components/   # Reusable UI components
  ├── 📂 constants/    # Static data content
  │   ├── data-content.js
- ├── App.js          # Main application entry point
+ ├── App.jsx          # Main application entry point
  ├── index.css       # Global styles
- ├── main.js         # Root rendering of the React app
+ ├── main.jsx         # Root rendering of the React app
 ```
 
 ## 📌 Live Demo
