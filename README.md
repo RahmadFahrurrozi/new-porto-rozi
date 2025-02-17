@@ -41,8 +41,8 @@ This is my personal web portfolio designed to showcase my projects and experienc
 - Smooth animations and transitions using Framer Motion
 - Dark mode and light mode support
 
-## 🛠️ Future Enhancements
-### Layout Components
+## 🛠️ Layout Components
+ 
 1. **Navigation Menu**
   🔹Fixed navigation bar
   🔹Links to all major sections
