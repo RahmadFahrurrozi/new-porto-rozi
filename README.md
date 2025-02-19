@@ -80,32 +80,6 @@ This is my personal web portfolio designed to showcase my projects and experienc
 - Social media integration (GitHub, LinkedIn, Instagram)
 - Interactive UI component
 
-## 📦 How to Run the Project
-
-1. **Clone this repository**
-   ```sh
-   git clone https://github.com/RahmadFahrurrozi/new-porto-rozi.git
-   ```
-
-2. **Navigate to the project directory**
-   ```sh
-   cd new-porto-rozi
-   ```
-
-3. **Install dependencies**
-   ```sh
-   npm install
-   ```
-
-4. **Run the project in development mode**
-   ```sh
-   npm run dev
-   ```
-
-5. **Open in browser**
-   
-   Access `http://localhost:5173` (if using Vite) or the URL displayed in the terminal.
-
 ## 📞 Contact
 
 - 🌐 **Website:** [https://rozi-pearl.vercel.app/](#)
