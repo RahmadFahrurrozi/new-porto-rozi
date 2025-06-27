@@ -51,7 +51,9 @@ const iconMap = {
   SiVite: <SiVite className="text-purple-500" />,
   SiShadcnui: <SiShadcnui className="text-sky-500" />,
   SiReactquery: <SiReactquery className="text-pink-500" />,
-  SiReacthookform: <SiReacthookform className="text-white" />,
+  SiReacthookform: (
+    <SiReacthookform className="text-blue-500 dark:text-white " />
+  ),
   FaGitAlt: <FaGitAlt className="text-orange-500" />,
   FaGithub: <FaGithub className="text-gray-800" />,
   SiReactrouter: <SiReactrouter className="text-red-500" />,
