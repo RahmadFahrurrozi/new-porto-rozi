@@ -15,7 +15,7 @@ import {
 } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiMysql, SiJest, SiWoocommerce } from "react-icons/si";
+import { SiMysql, SiWoocommerce, SiCodeceptjs } from "react-icons/si";
 import { motion } from "framer-motion";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
@@ -35,7 +35,7 @@ const iconMap = {
   FaElementor: <FaElementor className="text-pink-500" />,
   SiWoocommerce: <SiWoocommerce className="text-indigo-400" />,
   FaPhp: <FaPhp className="text-indigo-300" />,
-  SiJest: <SiJest className="text-red-600" />,
+  SiCodeceptjs: <SiCodeceptjs className="text-red-600" />,
 };
 
 const Projects = () => {

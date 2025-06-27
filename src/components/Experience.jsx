@@ -16,7 +16,6 @@ import {
 import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io";
 import {
-  SiJest,
   SiMysql,
   SiGooglecloud,
   SiWoocommerce,
@@ -26,6 +25,7 @@ import {
   SiReactquery,
   SiReacthookform,
   SiReactrouter,
+  SiCodeceptjs,
 } from "react-icons/si";
 import { motion } from "framer-motion";
 import GitHubCalendar from "react-github-calendar";
@@ -44,7 +44,7 @@ const iconMap = {
   FaAngular: <FaAngular className="text-red-600" />,
   FaWordpress: <FaWordpress className="text-blue-400" />,
   FaElementor: <FaElementor className="text-pink-500" />,
-  SiJest: <SiJest className="text-red-600" />,
+  SiCodeceptjs: <SiCodeceptjs className="text-red-600" />,
   SiGooglecloud: <SiGooglecloud className="text-blue-600" />,
   SiWoocommerce: <SiWoocommerce className="text-indigo-400" />,
   SiTypescript: <SiTypescript className="text-blue-500" />,

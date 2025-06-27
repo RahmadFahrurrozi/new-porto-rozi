@@ -59,7 +59,7 @@ export const EXPERIENCES = [
       { id: 2, nama: "CSS", icon: "FaCss3Alt" },
       { id: 3, nama: "Javascript", icon: "IoLogoJavascript" },
       { id: 4, nama: "Node Js", icon: "FaNodeJs" },
-      { id: 5, nama: "Jest", icon: "SiJest" },
+      { id: 5, nama: "CodeceptJS", icon: "SiCodeceptjs" },
       { id: 6, nama: "Cache API (Workbox)", icon: "SiGooglecloud" },
       { id: 7, nama: "Progressive Web Apps (PWA)", icon: "FaPwa" },
       { id: 8, nama: "IndexedDB", icon: "SiIndexdb" },
@@ -194,7 +194,7 @@ export const PROJECTS = [
       { id: 2, nama: "CSS", icon: "FaCss3Alt" },
       { id: 3, nama: "JavaScript", icon: "IoLogoJavascript" },
       { id: 5, nama: "Node.js", icon: "FaNodeJs" },
-      { id: 6, nama: "Jest", icon: "SiJest" },
+      { id: 6, nama: "Codecept", icon: "SiCodeceptjs" },
     ],
   },
 ];
