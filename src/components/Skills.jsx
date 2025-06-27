@@ -1,17 +1,14 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaNodeJs } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
-import { FaAngular } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { FaBootstrap } from "react-icons/fa";
 import { FaLaravel } from "react-icons/fa";
-import { SiMysql } from "react-icons/si";
+import { SiMysql, SiShadcnui } from "react-icons/si";
 import { FaFigma } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
 
 const Skills = () => {
   const containerVariants = {
@@ -67,12 +64,8 @@ const Skills = () => {
 
   const skills = [
     {
-      icon: <FaHtml5 className="text-7xl text-orange-600" />,
-      key: "html",
-    },
-    {
-      icon: <FaCss3Alt className="text-7xl text-blue-600" />,
-      key: "css",
+      icon: <SiTypescript className="text-7xl text-blue-600" />,
+      key: "typescript",
     },
     {
       icon: <IoLogoJavascript className="text-7xl text-yellow-400" />,
@@ -87,8 +80,8 @@ const Skills = () => {
       key: "react",
     },
     {
-      icon: <FaAngular className="text-7xl text-red-600" />,
-      key: "angular",
+      icon: <RiNextjsFill className="text-7xl text-gray-800 dark:text-white" />,
+      key: "next",
     },
     {
       icon: <FaLaravel className="text-7xl text-red-600" />,
@@ -99,7 +92,7 @@ const Skills = () => {
       key: "tailwind",
     },
     {
-      icon: <FaBootstrap className="text-7xl text-purple-600" />,
+      icon: <SiShadcnui className="text-5xl text-gray-800 dark:text-white" />,
       key: "bootstrap",
     },
     {
