@@ -6,8 +6,12 @@
 
 :root {
   font-family: "Nunito Sans", sans-serif;
-  /* background: #000; */
+  background-color: white;
 }
+.dark {
+  background-color: black;
+}
+
 html {
   scroll-behavior: smooth;
 }
