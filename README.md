@@ -24,9 +24,9 @@ This is my personal web portfolio designed to showcase my projects and experienc
  ├── 📂 components/   # Reusable UI components
  ├── 📂 constants/    # Static data content
  │   ├── data-content.js
- ├── App.js          # Main application entry point
+ ├── App.jsx          # Main application entry point
  ├── index.css       # Global styles
- ├── main.js         # Root rendering of the React app
+ ├── main.jsx         # Root rendering of the React app
 ```
 
 ## 📌 Live Demo
@@ -41,8 +41,8 @@ This is my personal web portfolio designed to showcase my projects and experienc
 - Smooth animations and transitions using Framer Motion
 - Dark mode and light mode support
 
-## 🛠️ Future Enhancements
-### Layout Components
+## 🛠️ Layout Components
+ 
 1. **Navigation Menu**
   🔹Fixed navigation bar
   🔹Links to all major sections
@@ -79,32 +79,6 @@ This is my personal web portfolio designed to showcase my projects and experienc
 - Smooth scrolling between sections
 - Social media integration (GitHub, LinkedIn, Instagram)
 - Interactive UI component
-
-## 📦 How to Run the Project
-
-1. **Clone this repository**
-   ```sh
-   git clone https://github.com/RahmadFahrurrozi/new-porto-rozi.git
-   ```
-
-2. **Navigate to the project directory**
-   ```sh
-   cd new-porto-rozi
-   ```
-
-3. **Install dependencies**
-   ```sh
-   npm install
-   ```
-
-4. **Run the project in development mode**
-   ```sh
-   npm run dev
-   ```
-
-5. **Open in browser**
-   
-   Access `http://localhost:5173` (if using Vite) or the URL displayed in the terminal.
 
 ## 📞 Contact
 
