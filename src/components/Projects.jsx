@@ -17,9 +17,9 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiMysql, SiJest, SiWoocommerce } from "react-icons/si";
 import { motion } from "framer-motion";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const iconMap = {
   FaAngular: <FaAngular className="text-red-600" />,
@@ -54,9 +54,9 @@ const Projects = () => {
   };
 
   const handleImageLoad = (imageId) => {
-    setImagesLoaded(prev => ({
+    setImagesLoaded((prev) => ({
       ...prev,
-      [imageId]: true
+      [imageId]: true,
     }));
   };
 
@@ -79,7 +79,7 @@ const Projects = () => {
             <motion.div
               className="w-full lg:w-1/4 relative group"
               whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: 0}}
+              initial={{ opacity: 0, x: 0 }}
               transition={{ duration: 1 }}
             >
               <div className="relative group">
@@ -129,7 +129,7 @@ const Projects = () => {
               <div className="mb-2 flex flex-row flex-wrap items-center gap-2">
                 {Project.technologies.map((tech) => (
                   <motion.div
-                    className="flex flex-row mr-2 items-center gap-2 rounded-full bg-stone-800 px-3 py-1 text-sm font-semibold text-white"
+                    className="flex flex-row mr-2 items-center gap-2 rounded-full bg-white shadow-sm px-3 py-1 text-sm font-semibold text-stone-600 dark:bg-stone-800 dark:text-stone-200"
                     whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: 100 }}
                     transition={{ duration: 1 }}
