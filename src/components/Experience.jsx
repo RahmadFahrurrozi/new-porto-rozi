@@ -1,4 +1,3 @@
-import React from "react";
 import { EXPERIENCES } from "../constants/data-content";
 import {
   FaReact,
@@ -11,10 +10,23 @@ import {
   FaAngular,
   FaWordpress,
   FaElementor,
+  FaGitAlt,
+  FaGithub,
 } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiJest, SiMysql, SiGooglecloud, SiWoocommerce } from "react-icons/si";
+import {
+  SiJest,
+  SiMysql,
+  SiGooglecloud,
+  SiWoocommerce,
+  SiTypescript,
+  SiVite,
+  SiShadcnui,
+  SiReactquery,
+  SiReacthookform,
+  SiReactrouter,
+} from "react-icons/si";
 import { motion } from "framer-motion";
 import GitHubCalendar from "react-github-calendar";
 
@@ -35,6 +47,14 @@ const iconMap = {
   SiJest: <SiJest className="text-red-600" />,
   SiGooglecloud: <SiGooglecloud className="text-blue-600" />,
   SiWoocommerce: <SiWoocommerce className="text-indigo-400" />,
+  SiTypescript: <SiTypescript className="text-blue-500" />,
+  SiVite: <SiVite className="text-purple-500" />,
+  SiShadcnui: <SiShadcnui className="text-sky-500" />,
+  SiReactquery: <SiReactquery className="text-pink-500" />,
+  SiReacthookform: <SiReacthookform className="text-white" />,
+  FaGitAlt: <FaGitAlt className="text-orange-500" />,
+  FaGithub: <FaGithub className="text-gray-800" />,
+  SiReactrouter: <SiReactrouter className="text-red-500" />,
 };
 
 const Experience = () => {
@@ -102,7 +122,7 @@ const Experience = () => {
                         initial={{ opacity: 0, x: -100 }}
                         transition={{ duration: 1 }}
                         key={tech.id}
-                        className="flex flex-row items-center gap-2 rounded-full bg-stone-700 px-3 py-1 text-sm font-semibold text-white"
+                        className="flex flex-row items-center gap-2 rounded-full bg-white text-stone-600 px-3 py-1 text-sm font-semibold shadow-sm dark:bg-stone-600 dark:text-white"
                       >
                         {iconMap[tech.icon]} {tech.nama}
                       </motion.span>
