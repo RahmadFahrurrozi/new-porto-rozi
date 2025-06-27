@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   FaBriefcase,
   FaEnvelope,
@@ -7,18 +7,19 @@ import {
   FaTools,
 } from "react-icons/fa";
 
+const menuItems = [
+  { icon: <FaHome />, label: "Home", link: "#home" },
+  { icon: <FaTools />, label: "Skills", link: "#skills" },
+  { icon: <FaProjectDiagram />, label: "Projects", link: "#projects" },
+  { icon: <FaBriefcase />, label: "Experience", link: "#experience" },
+  { icon: <FaEnvelope />, label: "Contact", link: "#contact" },
+];
+
 const Sidebar = ({ isDarkMode }) => {
   // Sstate for active section
   const [activeSection, setActiveSection] = useState("");
 
   // list menu items
-  const menuItems = [
-    { icon: <FaHome />, label: "Home", link: "#home" },
-    { icon: <FaTools />, label: "Skills", link: "#skills" },
-    { icon: <FaProjectDiagram />, label: "Projects", link: "#projects" },
-    { icon: <FaBriefcase />, label: "Experience", link: "#experience" },
-    { icon: <FaEnvelope />, label: "Contact", link: "#contact" },
-  ];
 
   // useEffect for scroll event listener
   useEffect(() => {
