@@ -55,7 +55,7 @@ const iconMap = {
     <SiReacthookform className="text-blue-500 dark:text-white " />
   ),
   FaGitAlt: <FaGitAlt className="text-orange-500" />,
-  FaGithub: <FaGithub className="text-gray-800" />,
+  FaGithub: <FaGithub className="text-gray-800 dark:text-white" />,
   SiReactrouter: <SiReactrouter className="text-red-500" />,
 };
 
@@ -124,7 +124,7 @@ const Experience = () => {
                         initial={{ opacity: 0, x: -100 }}
                         transition={{ duration: 1 }}
                         key={tech.id}
-                        className="flex flex-row items-center gap-2 rounded-full bg-white text-stone-600 px-3 py-1 text-sm font-semibold shadow-sm dark:bg-stone-600 dark:text-white"
+                        className="flex flex-row items-center gap-2 rounded-full bg-white text-stone-800 px-3 py-1 text-sm font-semibold shadow-sm dark:bg-stone-800 dark:text-white"
                       >
                         {iconMap[tech.icon]} {tech.nama}
                       </motion.span>

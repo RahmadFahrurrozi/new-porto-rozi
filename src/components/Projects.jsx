@@ -129,7 +129,7 @@ const Projects = () => {
               <div className="mb-2 flex flex-row flex-wrap items-center gap-2">
                 {Project.technologies.map((tech) => (
                   <motion.div
-                    className="flex flex-row mr-2 items-center gap-2 rounded-full bg-white shadow-sm px-3 py-1 text-sm font-semibold text-stone-600 dark:bg-stone-800 dark:text-stone-200"
+                    className="flex flex-row mr-2 items-center gap-2 rounded-full bg-white shadow-sm px-3 py-1 text-sm font-semibold text-stone-600 dark:bg-stone-800 dark:text-white"
                     whileInView={{ opacity: 1, y: 0 }}
                     initial={{ opacity: 0, y: 100 }}
                     transition={{ duration: 1 }}
