@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
 import Skills from "./components/Skills.jsx";
@@ -6,8 +6,6 @@ import Projects from "./components/Projects.jsx";
 import Experience from "./components/Experience.jsx";
 import Contact from "./components/Contact.jsx";
 import Sidebar from "./components/sidebar.jsx";
-
-
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -31,7 +29,7 @@ const App = () => {
     if (savedTheme === "dark") {
       setIsDarkMode(true);
     }
-  });
+  }, []);
 
   return (
     <div className="relative min-h-screen overflow-x-hidden text-gray-900 transition-colors duration-300 dark:text-white">
