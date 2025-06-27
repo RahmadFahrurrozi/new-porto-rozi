@@ -5,10 +5,11 @@ import { FaReact } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaLaravel } from "react-icons/fa";
-import { SiMysql, SiShadcnui } from "react-icons/si";
+import { SiShadcnui } from "react-icons/si";
 import { FaFigma } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
+import { SiReactquery } from "react-icons/si";
 
 const Skills = () => {
   const containerVariants = {
@@ -96,8 +97,8 @@ const Skills = () => {
       key: "bootstrap",
     },
     {
-      icon: <SiMysql className="text-7xl text-stone-600 dark:text-stone-100" />,
-      key: "mysql",
+      icon: <SiReactquery className="text-6xl text-pink-500" />,
+      key: "Tanstack Query",
     },
     {
       icon: <FaGitAlt className="text-6xl text-orange-600" />,
