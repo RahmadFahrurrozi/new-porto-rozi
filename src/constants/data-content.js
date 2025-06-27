@@ -14,6 +14,27 @@ export const HERO_CONTENT = `Hi, I'm Rahmad Fahrurrozi, a fourth-semester studen
 export const EXPERIENCES = [
   {
     id: 1,
+    year: "April - Now (2025)",
+    role: "Frontend Engineer",
+    company: "PT Mitramedis Inovasi Solusindo",
+    description:
+      "Responsible for developing and maintaining the backoffice system for Mitra Medis, focusing on creating responsive, user-friendly interfaces using modern frontend technologies. Collaborated with cross-functional teams to implement new features, improve system performance, and ensure seamless integration with backend services.",
+    technologies: [
+      { id: 1, nama: "TypeScript", icon: "SiTypescript" },
+      { id: 2, nama: "Vite", icon: "SiVite" },
+      { id: 3, nama: "React", icon: "FaReact" },
+      { id: 4, nama: "shadcn/ui", icon: "SiShadcnui" },
+      { id: 5, nama: "Tailwind CSS", icon: "RiTailwindCssFill" },
+      { id: 6, nama: "React Router", icon: "SiReactrouter" },
+      { id: 7, nama: "Context API", icon: "FaReact" },
+      { id: 8, nama: "React Hook Form", icon: "SiReacthookform" },
+      { id: 9, nama: "TansTack Query", icon: "SiReactquery" },
+      { id: 10, nama: "Git", icon: "FaGitAlt" },
+      { id: 11, nama: "GitHub ", icon: "FaGithub" },
+    ],
+  },
+  {
+    id: 2,
     year: "January (2025)",
     role: "Frontend Developer",
     company: "Politeknik Negeri Banyuwangi",
@@ -28,7 +49,7 @@ export const EXPERIENCES = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     year: "february - December (2024)",
     role: "Frontend Developer",
     company: "Dicoding Academy",
@@ -48,7 +69,7 @@ export const EXPERIENCES = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     year: "Juli - Agust (2024)",
     role: "Full Stack Developer",
     company: "Politeknik Negeri Banyuwangi",
@@ -64,7 +85,7 @@ export const EXPERIENCES = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     year: "Agust - September (2024)",
     role: "Fullstack Developer",
     company: "Akrab E-commerce Project",
