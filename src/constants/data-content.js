@@ -106,7 +106,7 @@ export const PROJECTS = [
   {
     id: 1,
     title: "Backoffice Mitramedis",
-    link: "https://admin-staging.mitramedis.net/",
+    link: "/",
     image: mitramedis,
 
     description:
