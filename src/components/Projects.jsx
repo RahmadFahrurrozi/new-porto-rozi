@@ -12,14 +12,35 @@ import {
   FaPhp,
   FaExternalLinkAlt,
   FaEye,
+  FaGitAlt,
+  FaGithub,
+  FaReact,
 } from "react-icons/fa";
-import { RiTailwindCssFill } from "react-icons/ri";
+import {
+  RiNextjsFill,
+  RiTailwindCssFill,
+  RiUploadCloud2Line,
+} from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiMysql, SiWoocommerce, SiCodeceptjs } from "react-icons/si";
+import {
+  SiMysql,
+  SiWoocommerce,
+  SiCodeceptjs,
+  SiTypescript,
+  SiVite,
+  SiShadcnui,
+  SiReactquery,
+  SiReacthookform,
+  SiReactrouter,
+  SiPrisma,
+  SiClerk,
+  SiVercel,
+} from "react-icons/si";
 import { motion } from "framer-motion";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import "react-lazy-load-image-component/src/effects/blur.css";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 const iconMap = {
   FaAngular: <FaAngular className="text-red-600" />,
@@ -36,6 +57,25 @@ const iconMap = {
   SiWoocommerce: <SiWoocommerce className="text-indigo-400" />,
   FaPhp: <FaPhp className="text-indigo-300" />,
   SiCodeceptjs: <SiCodeceptjs className="text-red-600" />,
+  SiTypescript: <SiTypescript className="text-blue-500" />,
+  SiVite: <SiVite className="text-purple-500" />,
+  SiShadcnui: <SiShadcnui className="text-sky-500" />,
+  SiReactquery: <SiReactquery className="text-pink-500" />,
+  SiReacthookform: (
+    <SiReacthookform className="text-blue-500 dark:text-white " />
+  ),
+  FaGitAlt: <FaGitAlt className="text-orange-500" />,
+  FaGithub: <FaGithub className="text-gray-800 dark:text-white" />,
+  SiReactrouter: <SiReactrouter className="text-red-500" />,
+  FaReact: <FaReact className="text-cyan-400" />,
+  RiNextjsFill: <RiNextjsFill className="text-slate-800 dark:text-slate-100" />,
+  SiPrisma: <SiPrisma className="text-slate-800 dark:text-slate-100" />,
+  BiLogoPostgresql: (
+    <BiLogoPostgresql className="text-slate-800 dark:text-slate-100" />
+  ),
+  SiClerk: <SiClerk className="text-slate-800 dark:text-slate-100" />,
+  RiUploadCloud2Line: <RiUploadCloud2Line className="text-red-500" />,
+  SiVercel: <SiVercel className="text-slate-800 dark:text-slate-100" />,
 };
 
 const Projects = () => {

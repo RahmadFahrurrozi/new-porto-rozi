@@ -3,6 +3,8 @@ import umkmKarangbendo from "../assets/projects/umkm-desa-karangbendo.webp";
 import akrab from "../assets/projects/akrab.webp";
 import panda from "../assets/photo/panda.webp";
 import restaurant from "../assets/projects/restaurant-app.webp";
+import mitramedis from "../assets/projects/mitramedis.webp";
+import codeverse from "../assets/projects/codeverse.webp";
 
 export const PROFILEPICT = {
   name: "Rahmad Fahrurrozi",
@@ -18,7 +20,7 @@ export const EXPERIENCES = [
     role: "Frontend Engineer",
     company: "PT Mitramedis Inovasi Solusindo",
     description:
-      "Responsible for developing and maintaining the backoffice system for Mitra Medis, focusing on creating responsive, user-friendly interfaces using modern frontend technologies. Collaborated with cross-functional teams to implement new features, improve system performance, and ensure seamless integration with backend services.",
+      "Internship as a Front-End Engineer at PT Mitramedis Inovasi Solusindo, developing the internal backoffice system. Built key features like login, user management, and leads management. Responsible for slicing UI from designs and integrating with backend via REST APIs. Followed internal code standards, feature-based Git workflow, and regular code reviews teamwork and clean, professional softwere development",
     technologies: [
       { id: 1, nama: "TypeScript", icon: "SiTypescript" },
       { id: 2, nama: "Vite", icon: "SiVite" },
@@ -103,6 +105,50 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     id: 1,
+    title: "Backoffice Mitramedis",
+    link: "https://admin-staging.mitramedis.net/",
+    image: mitramedis,
+
+    description:
+      "Develop of an internal backoffice system with features such as leads management, client data, user roles, reports, and transactions. Responsible for implementing UI from design specs and integrating components with RESTful APIs while adhering to clean code practices",
+    technologies: [
+      { id: 1, nama: "TypeScript", icon: "SiTypescript" },
+      { id: 2, nama: "Vite", icon: "SiVite" },
+      { id: 3, nama: "React", icon: "FaReact" },
+      { id: 4, nama: "shadcn/ui", icon: "SiShadcnui" },
+      { id: 5, nama: "Tailwind CSS", icon: "RiTailwindCssFill" },
+      { id: 6, nama: "React Router", icon: "SiReactrouter" },
+      { id: 7, nama: "Context API", icon: "FaReact" },
+      { id: 8, nama: "React Hook Form", icon: "SiReacthookform" },
+      { id: 9, nama: "TansTack Query", icon: "SiReactquery" },
+      { id: 10, nama: "Git", icon: "FaGitAlt" },
+      { id: 11, nama: "GitHub ", icon: "FaGithub" },
+    ],
+  },
+
+  {
+    id: 2,
+    title: "Codeverse",
+    link: "https://codeverse-psi.vercel.app/",
+    image: codeverse,
+    description:
+      "Codeverse is a social platform built for developers to share projects, showcase tech stacks, and connect with like-minded professionals. Users can create profiles, upload portfolios, and interact with others through a modern, clean interface. Codeverse combines performance and design to deliver a developer-centric experience.est",
+    technologies: [
+      { id: 1, nama: "TypeScript", icon: "SiTypescript" },
+      { id: 2, nama: "NextJS", icon: "RiNextjsFill" },
+      { id: 3, nama: "React", icon: "FaReact" },
+      { id: 4, nama: "shadcn/ui", icon: "SiShadcnui" },
+      { id: 5, nama: "Tailwind CSS", icon: "RiTailwindCssFill" },
+      { id: 6, nama: "Prisma", icon: "SiPrisma" },
+      { id: 7, nama: "PostgreSQL", icon: "BiLogoPostgresql" },
+      { id: 8, nama: "Neon", icon: "" },
+      { id: 9, nama: "Clerk", icon: "SiClerk" },
+      { id: 10, nama: "Uploadthing", icon: "RiUploadCloud2Line" },
+      { id: 11, nama: "Vercel ", icon: "SiVercel" },
+    ],
+  },
+  {
+    id: 3,
     title: "Digital Business Website",
     link: "https://bisnisdigital.poliwangi.ac.id/",
     image: bsdwebsite,
@@ -119,7 +165,7 @@ export const PROJECTS = [
     ],
   },
   {
-    id: 2,
+    id: 4,
     title: "Karangbendo Village UMKM Website",
     link: "https://umkmdesakarangbendo.com/",
     image: umkmKarangbendo,
@@ -164,7 +210,7 @@ export const PROJECTS = [
     ],
   },
   {
-    id: 3,
+    id: 5,
     title: "Akrab E-commerce",
     link: "https://ta.poliwangi.ac.id/~ti22003/akrabbwi/",
     image: akrab,
@@ -183,7 +229,7 @@ export const PROJECTS = [
     ],
   },
   {
-    id: 4,
+    id: 6,
     title: "Restaurant Website",
     link: "https://restaurant-app-rahmadfahrurrozi.vercel.app/",
     image: restaurant,
