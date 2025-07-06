@@ -31,8 +31,9 @@ export const EXPERIENCES = [
       { id: 7, nama: "Context API", icon: "FaReact" },
       { id: 8, nama: "React Hook Form", icon: "SiReacthookform" },
       { id: 9, nama: "TansTack Query", icon: "SiReactquery" },
-      { id: 10, nama: "Git", icon: "FaGitAlt" },
-      { id: 11, nama: "GitHub ", icon: "FaGithub" },
+      { id: 10, nama: "React Auth Kit", icon: "FaReact" },
+      { id: 11, nama: "Git", icon: "FaGitAlt" },
+      { id: 12, nama: "GitHub ", icon: "FaGithub" },
     ],
   },
   {
@@ -121,8 +122,9 @@ export const PROJECTS = [
       { id: 7, nama: "Context API", icon: "FaReact" },
       { id: 8, nama: "React Hook Form", icon: "SiReacthookform" },
       { id: 9, nama: "TansTack Query", icon: "SiReactquery" },
-      { id: 10, nama: "Git", icon: "FaGitAlt" },
-      { id: 11, nama: "GitHub ", icon: "FaGithub" },
+      { id: 10, nama: "React Auth Kit", icon: "FaReact" },
+      { id: 11, nama: "Git", icon: "FaGitAlt" },
+      { id: 12, nama: "GitHub ", icon: "FaGithub" },
     ],
   },
 
