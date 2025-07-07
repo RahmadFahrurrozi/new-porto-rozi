@@ -11,7 +11,7 @@ export const PROFILEPICT = {
   image: panda,
 };
 
-export const HERO_CONTENT = `Hi, I'm Rahmad Fahrurrozi, a fourth-semester student in Business and Informatics at Politeknik Negeri Banyuwangi. I'm a graduate of the 2024 DBS Foundation Scholarship Program by Dicoding and DBS, specializing in Frontend Development.`;
+export const HERO_CONTENT = `Hi, I'm Rahmad Fahrurrozi, a fifth-semester student in Business and Informatics at Politeknik Negeri Banyuwangi. I'm a graduate of the 2024 DBS Foundation Scholarship Program by Dicoding and DBS, specializing in Frontend Development.`;
 
 export const EXPERIENCES = [
   {
